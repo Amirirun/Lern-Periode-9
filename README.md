@@ -31,7 +31,7 @@ Heute habe ich es geschafft das Hello World auszugeben und eine Database zu erst
 - [x] 2.Mithilfe des Tutorials anfangen die Datenbank mit Godot zu verbinden.
 
 
-Heute habe ich meine neu erstellte Datenbank mit Godot verbunden und schon ein bisschen im Code intirgiert. 
+Heute habe ich meine neu erstellte Datenbank mit Godot verbunden und schon ein bisschen im Code intirgiert. Zudem habe ich ein Table für den Gamescore erstellt mit ID, NAME und SCORE.
 
 ## 06.03
 
