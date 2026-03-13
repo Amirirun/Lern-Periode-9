@@ -35,8 +35,18 @@ Heute habe ich meine neu erstellte Datenbank mit Godot verbunden und schon ein b
 
 ## 06.03
 
-- [ ] Eine Score anzeige in Godot erstellen
-- [ ] Die Score anzeige programmieren
-- [ ] 1.SQlite mit dem Score zu verbinden
-- [ ] 2.SQlite mit dem Score zu verbinden
+- [x] Eine Score anzeige in Godot erstellen
+- [x] Die Score anzeige programmieren
+- [x] 1.SQlite mit dem Score zu verbinden
+- [x] 2.SQlite mit dem Score zu verbinden
+
+Da ich letzte Woche krank war habe ich die Arbeitspakete heute nachgeholt. Die Score anzeige Funktioniert schon, die Datenbank ist eingerichtet jedoch habe ich das Problem das die Datenbank nicht gefunden wird. Dieses Problem möchte ich nächte Woche lösen.
+
+## 20.03
+
+- [ ] 1.Datenbank Problem lösen
+- [ ] 2.Datenbank Problem lösen
+- [ ] 1.Code für das Speichern des Scores in der Datenbank schreiben.
+- [ ] 2.Code für das Speichern des Scores in der Datenbank schreiben.
+      
 
