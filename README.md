@@ -44,9 +44,14 @@ Da ich letzte Woche krank war habe ich die Arbeitspakete heute nachgeholt. Die S
 
 ## 20.03
 
-- [ ] 1.Datenbank Problem lösen
-- [ ] 2.Datenbank Problem lösen
-- [ ] 1.Code für das Speichern des Scores in der Datenbank schreiben.
-- [ ] 2.Code für das Speichern des Scores in der Datenbank schreiben.
+- [x] 1.Datenbank Problem lösen
+- [x] 2.Datenbank Problem lösen
+- [x] 1.Code für das Speichern des Scores in der Datenbank schreiben.
+- [x] 2.Code für das Speichern des Scores in der Datenbank schreiben.
       
+Ich konnte das Datenbankenproblem lösen und mittlerweile wird auch die Anzahl der gesammelten Äpfel in der Datenbank angezeigt.
 
+## 27.03
+
+- [ ] Immer nur Highscore speichern
+- [ ] Wenn ein neuer Highscore erzielt wurde den alten ersetzten
