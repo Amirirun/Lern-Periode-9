@@ -1,15 +1,72 @@
 extends Node
 
+const SQLite = preload("res://addons/godot-sqlite/bin/gdsqlite.gdns")
+
+var db
+var db_name = "res://DataStore/database.db"
+
 var snake
 var window_border
 var apple_count = 0
+var player_id = 1
+
 
 func _ready():
+	init_db()
+	ensure_player_exists()
+
 	window_border = OS.get_window_size()
 	var classLoad = load("res://Scripts/Snake.gd")
 	snake = classLoad.new()
 	draw_apple()
 	$apple.visible = true
+
+
+func init_db():
+	db = SQLite.new()
+	db.path = db_name
+
+	if db.open_db():
+		print("DB verbunden: ", db_name)
+	else:
+		print("Fehler: Datenbank konnte nicht geöffnet werden")
+
+
+func ensure_player_exists():
+	if db == null:
+		return
+
+	db.query("SELECT * FROM PlayerInfo WHERE ID = " + str(player_id) + ";")
+
+	if db.query_result.size() == 0:
+		var dict = {}
+		dict["ID"] = player_id
+		dict["Name"] = "Navid"
+		dict["Score"] = 0
+		db.insert_row("PlayerInfo", dict)
+		print("Player erstellt")
+	else:
+		print("Player existiert bereits")
+
+
+func save_apple_to_db():
+	if db == null:
+		return
+
+	var dict = {}
+	dict["Name"] = "Apple"
+	dict["PlayerID"] = player_id
+
+	db.insert_row("ItemInventory", dict)
+	print("Apfel in DB gespeichert")
+
+
+func update_score_in_db():
+	if db == null:
+		return
+
+	db.query("UPDATE PlayerInfo SET Score = " + str(apple_count) + " WHERE ID = " + str(player_id) + ";")
+	print("Score in DB aktualisiert: ", apple_count)
 
 
 func get_random_pos_for_apple():
@@ -84,5 +141,9 @@ func _on_Timer_timeout():
 		$AudioStreamPlayer2D.play()
 		apple_count += 1
 		print("Äpfel gegessen: ", apple_count)
+
+		save_apple_to_db()
+		update_score_in_db()
+
 		draw_apple()
 		snake.is_apple_colide = true
