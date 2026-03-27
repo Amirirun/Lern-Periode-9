@@ -57,3 +57,5 @@ Ich konnte das Datenbankenproblem lösen und mittlerweile wird auch die Anzahl d
 - [x] Den Highscore in der Konsole anzeigen
 
 Heute habe ich mein Projekt abgeschlossen. Alles funktioniert und jegliche Bugs wurden gefixt.
+
+Mein Tutorial: https://github.com/Amirirun/Lern-Periode-9/blob/main/tutorial.md
