@@ -55,3 +55,5 @@ Ich konnte das Datenbankenproblem lösen und mittlerweile wird auch die Anzahl d
 
 - [x] Immer nur Highscore speichern
 - [x] Den Highscore in der Konsole anzeigen
+
+Heute habe ich mein Projekt abgeschlossen. Alles funktioniert und jegliche Bugs wurden gefixt.
