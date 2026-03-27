@@ -53,5 +53,5 @@ Ich konnte das Datenbankenproblem lösen und mittlerweile wird auch die Anzahl d
 
 ## 27.03
 
-- [ ] Immer nur Highscore speichern
-- [ ] Wenn ein neuer Highscore erzielt wurde den alten ersetzten
+- [x] Immer nur Highscore speichern
+- [x] Den Highscore in der Konsole anzeigen
