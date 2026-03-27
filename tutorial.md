@@ -105,9 +105,13 @@ What could go wrong?
 Here are some common problems:
 
  Snake does not move → Input handling is wrong
+ 
  Apple spawns inside snake → Random logic needs fixing
+ 
  Game crashes → Missing nodes or wrong paths
+ 
  Database not working → Wrong file path (res:// vs user://)
+ 
  Score not saving → Table name or columns incorrect
 
 
